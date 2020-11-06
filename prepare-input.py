@@ -14,6 +14,6 @@ print("Data Inicial: ", data_inicial)
 print("Data Inicial: ", data_final)
 print("Máximo de Tweets: ", max_tweets)
 
-os.system('echo "$(snscrape --jsonl --max-results ' + max_tweets + ' twitter-search "#' + hashtag + ' since:' + data_inicial + ' until:'+ data_final+ '" > ' + arquivo +'.json)"')
+os.system('echo ./snscrape --jsonl --max-results ' + max_tweets + ' twitter-search "#' + hashtag + ' since:' + data_inicial + ' until:'+ data_final+ '" > ' + arquivo +'.json')
 print("Busca Finalizada => Arquivo de Saíoda:", arquivo)
 
